@@ -84,9 +84,13 @@ html, body {
     line-height: 1.5;
 }
 
+/* ===================================================
+   COORDINACIÓN DE BOTONES LATERALES (BLINDADO PARA GITHUB PAGES)
+   =================================================== */
 #btn-prev, #btn-next {
     position: absolute;
-    bottom: -80px; 
+    top: 50%;
+    margin-top: -30px;
     background-color: #ffcc00;
     color: #1a1a1a;
     border: 4px solid #1a1a1a;
@@ -99,20 +103,20 @@ html, body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 6px 0 #1a1a1a;
-    transition: all 0.1s ease;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease, margin-top 0.1s ease;
     z-index: 100;
 }
 
 #btn-prev {
-    left: 220px;
+    left: -80px;
 }
 
 #btn-next {
-    right: 220px;
+    right: -80px;
 }
 
 #btn-prev:active, #btn-next:active {
-    transform: translateY(4px);
+    margin-top: -26px;
     box-shadow: 0 2px 0 #1a1a1a;
 }
 
