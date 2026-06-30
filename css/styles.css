@@ -492,3 +492,400 @@ html, body {
     height: 100%;
     max-height: 100%;
 }
+
+/* PAGINA 6 Y 7 */
+.contenido-intro-fabrica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px !important;
+    background-color: #fffaf0;
+}
+
+.titulo-seccion {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-seccion span {
+    color: #943838;
+    font-size: 2.5rem;
+}
+
+.bloque-texto-intro p {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: #2f3542;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.bloque-texto-intro p strong {
+    font-weight: 700;
+    color: #943838;
+}
+
+.contenido-lista-organos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 25px !important;
+    background-color: #fffaf0;
+}
+
+.subtitulo-seccion {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.subtitulo-seccion span {
+    color: #2e86de;
+}
+
+.contenedor-fichas-organos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ficha-organo {
+    display: flex;
+    background: #ffffff;
+    border: 2px solid #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 0 #1a1a1a;
+    height: 90px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.ficha-organo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0 #1a1a1a;
+    cursor: pointer;
+}
+
+.indicador-lateral {
+    width: 12px;
+    flex-shrink: 0;
+}
+
+.rinon-color   { background-color: #ff6e79; }
+.ureter-color  { background-color: #ffcc00; }
+.vejiga-color  { background-color: #ff97a9; }
+.uretra-color  { background-color: #1dd1a1; }
+
+.info-organo {
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.info-organo h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin: 0 0 2px 0;
+}
+
+.info-organo p {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 0.88rem;
+    color: #57606f;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* PAGINA 8 NO TOCAR*/
+.contenido-mapa-interactivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+    padding: 30px 20px !important;
+    background-color: #fffaf0;
+    position: relative;
+}
+
+.instruccion-mapa {
+    background-color: #943838;
+    border: 2px solid #1a1a1a;
+    border-radius: 20px;
+    padding: 6px 15px;
+    box-shadow: 0 4px 0 #1a1a1a;
+}
+
+.instruccion-mapa p {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.mapa-sistema-container {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#svg-sistema-excretor {
+    height: 95%;
+    max-width: 100%;
+    z-index: 5;
+}
+
+.organo-interactivo {
+    cursor: pointer;
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.organo-interactivo:hover {
+    filter: brightness(1.15);
+}
+
+#sombra-sistema-3d {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 14px;
+    background-color: rgba(26, 26, 26, 0.15);
+    border-radius: 50%;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+#tooltip-mapa {
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 5px 12px;
+    box-shadow: 0 4px 0 #1a1a1a;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+    transform: translate(-50%, -100%);
+}
+
+#tooltip-mapa span {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #1a1a1a;
+}
+
+/* PAGINA 9 IMPORTANTE NO TOCAR*/
+.contenido-panel-diagnostico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px !important;
+    background-color: #fffaf0;
+}
+
+/* CLASE GLOBAL DE CONTROL DE ESTADO */
+.oculto {
+    display: none !important;
+}
+
+#pantalla-espera-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+#pantalla-espera-panel h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #943838;
+    margin: 20px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+#pantalla-espera-panel p {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #747d8c;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.radar-escaner {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(148, 56, 56, 0.2);
+    border: 3px solid #943838;
+    border-radius: 50%;
+    position: relative;
+    animation: pulsarRadar 1.8s infinite ease-in-out;
+}
+
+.radar-escaner::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #943838;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulsarRadar {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 15px rgba(148, 56, 56, 0.4); }
+    100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+#contenido-organo-panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#panel-titulo-organo {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.05);
+}
+
+.panel-visor-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.slider-contenedor-imagenes {
+    flex-grow: 1;
+    height: 200px;
+    background: #ffffff;
+    border: 3px solid #1a1a1a;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05), 0 5px 0 rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+#panel-imagen-organo {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#indicador-slide-vista {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #a4b0be;
+    position: absolute;
+    bottom: 5px;
+}
+
+.flecha-slider {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    border: 3px solid #1a1a1a;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 0 #1a1a1a;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    flex-shrink: 0;
+}
+
+.flecha-slider:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #1a1a1a;
+}
+
+.flecha-slider:hover {
+    background-color: #ffe066;
+}
+
+.panel-descripcion-organo {
+    width: 100%;
+    background: #ffffff;
+    border: 3px solid #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 0 #1a1a1a;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.badge-categoria {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+#panel-texto-descripcion {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #2f3542;
+    line-height: 1.4;
+    margin: 5px 0 0 0;
+    text-align: justify;
+}
